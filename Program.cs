@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.VisualBasic;
+
 namespace Assignment05
 {
     class Program
@@ -72,6 +74,18 @@ namespace Assignment05
             string genreText = "Science";
             genre = (Genre)Enum.Parse(typeof(Genre) , genreText);
             Console.WriteLine(genre);
+            #endregion
+
+            #region Question 9
+            // 9.Given string genreText = "Mystery"; (not a valid Genre value), use Enum.TryParse() to
+            //attempt the conversion.Print "Unknown genre" if it fails
+            genreText = "Mystery";
+            bool isParsed = Enum.TryParse(genreText,true,out genre) ;
+            if(isParsed)
+                Console.WriteLine(genre);
+            else
+                Console.WriteLine("Unkown genre");
+
             #endregion
 
         }
