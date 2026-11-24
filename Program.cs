@@ -6,6 +6,7 @@ namespace Assignment05
         class Book
         {
             private string password = "Secret";
+            internal int copiesInStock = 5;
         }
         public static void Main()
         {
@@ -15,6 +16,11 @@ namespace Assignment05
             Book B = new Book();
             //Console.WriteLine(B.password); it will not print because the access modifier private can only access in it's own class
 
+            #endregion
+
+            #region Question 2
+            // 2. Add an internal int copiesInStock = 5; field to Book. Print it from Main. Does it compile? Why ?
+            Console.WriteLine(B.copiesInStock); // 5 , because access modifier internal it accessed in the same project 
             #endregion
 
         }
