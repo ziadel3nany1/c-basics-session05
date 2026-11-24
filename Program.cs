@@ -7,6 +7,7 @@ namespace Assignment05
         {
             private string password = "Secret";
             internal int copiesInStock = 5;
+            public string Title = "Clean Code";
         }
         public static void Main()
         {
@@ -21,6 +22,11 @@ namespace Assignment05
             #region Question 2
             // 2. Add an internal int copiesInStock = 5; field to Book. Print it from Main. Does it compile? Why ?
             Console.WriteLine(B.copiesInStock); // 5 , because access modifier internal it accessed in the same project 
+            #endregion
+
+            #region Question 3 
+            // 3. Add a public string Title; field to Book. Set it and print it from Main.
+            Console.WriteLine(B.Title); // access modifier public it accessed anywhere for anyone
             #endregion
 
         }
