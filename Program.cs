@@ -7,7 +7,14 @@ namespace Assignment05
         {
             private string password = "Secret";
             internal int copiesInStock = 5;
-            public string Title = "Clean Code";
+            public string title = "Clean Code";
+            public Genre genre = Genre.Science;
+        }
+        enum Genre
+        {
+            Fiction = 1,
+            NonFiction,
+            Science
         }
         public static void Main()
         {
@@ -26,7 +33,14 @@ namespace Assignment05
 
             #region Question 3 
             // 3. Add a public string Title; field to Book. Set it and print it from Main.
-            Console.WriteLine(B.Title); // access modifier public it accessed anywhere for anyone
+            Console.WriteLine(B.title); // access modifier public it accessed anywhere for anyone
+            #endregion
+
+            #region Question 4 
+            // 4.Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book,
+            //assign it Genre.Science, and print it.
+
+            Console.WriteLine(B.genre); 
             #endregion
 
         }
