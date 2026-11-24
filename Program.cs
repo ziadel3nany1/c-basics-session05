@@ -53,6 +53,13 @@ namespace Assignment05
 
             #endregion
 
+            #region Question 6 
+            // 6.Given int genreNumber = 1;, cast it into a Genre value and print the result.
+            int genreNumber = 1;
+            Genre genre = (Genre)genreNumber;
+            Console.WriteLine(genre);
+            #endregion
+
         }
     }
 }
